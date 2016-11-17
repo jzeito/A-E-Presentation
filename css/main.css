@@ -1,9 +1,37 @@
-#bg {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-	
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
+.imdb {
+	position: relative;
 }
+
+.imdb img {
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#imdb {
+	top: 50%;
+	padding-left: 5%;
+	position: absolute;
+	font-family: helvetica neue;
+	font-style: medium;
+	font-weight: 300;
+	color: white;
+	width: 100%;
+	font-size: 90px;
+	text-decoration: underline;
+}
+
+@media only screen and (max-device-width: 800px) {
+	#imdb {
+			font-size: 50px;
+		}
+
+
+@media only screen and (max-device-width: 375px) {
+	#imdb {
+			font-size: 30px;
+		}
